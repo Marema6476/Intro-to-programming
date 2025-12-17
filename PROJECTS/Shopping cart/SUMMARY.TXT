@@ -1,0 +1,54 @@
+Here is the revised paragraph without mentioning an image:
+
+---
+
+Your shopping cart webpage includes a table listing five items—Coke, Kit Kat, Bar One, Fanta,
+ and Lunch Bar—each with columns for item number, price, quantity, total, and buttons to add or remove items,
+  with all quantities and totals currently at zero. Using this shopping cart, the task is to complete the 
+  project by ensuring the *Remove* buttons correctly decrease the quantity without allowing negative values,
+   and by adding a *Checkout* button that calculates the total cost of all items and displays the final amount 
+   on the page using a new function.
+
+---
+
+HTML
+Here is a clear summary of your code in paragraph form:
+
+---
+
+This code sets up the basic structure of a shopping cart webpage. It links to an external CSS file
+ for styling and a JavaScript file where the shopping cart functions are stored. When the page loads,
+  it runs the `display_all()` function, which is likely responsible for showing the shopping cart items.
+   The body includes a placeholder paragraph element (`demo`) for displaying information, a *Checkout* button 
+   that triggers the `checkout()` function, and an empty paragraph (`checkoutTotal`) where the final total 
+   price will appear.
+    
+
+  JS  
+  Here is a clear summary of the JavaScript code in paragraph form:
+
+---
+
+This JavaScript code manages all the logic for the shopping cart. It begins by creating arrays for item numbers,
+ product names, prices, quantities, and totals, along with a variable to track the overall order amount.
+  The `add_selection()` function increases the quantity of a selected item, updates its total price,
+   recalculates the overall order amount, and refreshes the display.
+    The `remove_selection()` function decreases the quantity only if it is above zero, updates the item’s total,
+     adjusts the order amount, and refreshes the table. The `checkout()` function displays the final total cost 
+     in the designated HTML element. The `display_all()` function dynamically builds an HTML table showing all 
+     items, their prices, quantities, totals, and Add/Remove buttons, then inserts this table into the page.
+      Finally, when the page loads, it automatically calls `display_all()` to show the shopping cart.
+
+
+CSS
+
+Here is a clear summary of your CSS code in paragraph form:
+
+---
+
+This CSS file styles the shopping cart table and checkout section. It sets the table to use Arial or a similar
+ sans-serif font, collapses the borders, stretches the table to full width, adds rounded corners, and applies a
+  double green border for emphasis. All table cells and headers have a solid black border, left-aligned text, 
+  and padded spacing to improve readability. Every even-numbered row is highlighted with a pink background to 
+  create alternating row colors. Lastly, the `checkoutTotal` section is given an aqua background to make the 
+  displayed total stand out on the page.
